@@ -15,8 +15,17 @@ RUN apk add --update \
   php7-simplexml \
   php7-tokenizer \
   php7-xsl \
+  jq \
+  python2 \
+  unzip \
+  && rm -rf /var/cache/apk/* \
   && curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer \
-  && rm -rf /var/cache/apk/*
+  && curl "https://s3.amazonaws.com/aws-cli/awscli-bundle.zip" -o "awscli-bundle.zip" \
+  && unzip awscli-bundle.zip \
+  && ./awscli-bundle/install -b ~/bin/aws \
+  && rm -f awscli-bundle.zip
+
+ENV PATH=/root/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 
 WORKDIR /workspace
 
