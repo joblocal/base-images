@@ -18,13 +18,16 @@ RUN apk add --update \
   jq \
   python2 \
   unzip \
-  && rm -rf /var/cache/apk/* \
-  && curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer \
+  py-pip \
+  && rm -rf /var/cache/apk/*
+
+RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer \
   && curl "https://s3.amazonaws.com/aws-cli/awscli-bundle.zip" -o "awscli-bundle.zip" \
   && unzip awscli-bundle.zip \
   && ./awscli-bundle/install -b /usr/local/bin/aws \
   && rm -f awscli-bundle.zip
 
+RUN pip install --no-cache-dir docker-compose
 
 WORKDIR /workspace
 
