@@ -21,6 +21,7 @@ RUN apk add --update \
   py-pip \
   git \
   rsync \
+  nodejs \
   && rm -rf /var/cache/apk/*
 
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer \
