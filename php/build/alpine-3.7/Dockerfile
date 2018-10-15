@@ -19,6 +19,8 @@ RUN apk add --update \
   python2 \
   unzip \
   py-pip \
+  git \
+  rsync \
   && rm -rf /var/cache/apk/*
 
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer \
