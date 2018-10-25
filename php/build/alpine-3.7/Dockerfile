@@ -17,6 +17,7 @@ RUN apk add --update \
   php7-xsl \
   jq \
   python2 \
+  zip \
   unzip \
   py-pip \
   git \
