@@ -14,7 +14,10 @@ The images are used by our CI tools (prefixed 'build') and as base images for ou
 - [node/build/10.8.0](https://hub.docker.com/r/joblocal/base-build-node-awscli/)
 - [node/build/10.12.0](https://hub.docker.com/r/joblocal/base-build-node-awscli/)
 - [php/build/alpine-3.7](https://hub.docker.com/r/joblocal/base-build/)
+- [php/build/alpine-3.8](https://hub.docker.com/r/joblocal/base-build/)
 
 ### Base Images
 - [php/app/alpine-3.7](https://hub.docker.com/r/joblocal/base-app/)
+- [php/app/alpine-3.8](https://hub.docker.com/r/joblocal/base-app/)
 - [php/worker/alpine-3.7](https://hub.docker.com/r/joblocal/base-worker/)
+- [php/worker/alpine-3.8](https://hub.docker.com/r/joblocal/base-worker/)
