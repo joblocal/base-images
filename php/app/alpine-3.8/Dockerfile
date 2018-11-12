@@ -29,7 +29,7 @@ RUN apk add --update \
   && ln -sf /dev/stderr /var/log/nginx/error.log
 
 
-# Set Timezone to UTC and remove apk cache
+# Set Timezone to UTC
 RUN apk add --update tzdata \
   && cp /usr/share/zoneinfo/UTC /etc/localtime \
   && echo "UTC" >  /etc/timezone \
