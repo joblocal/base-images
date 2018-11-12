@@ -2,9 +2,6 @@ FROM alpine:3.8
 
 LABEL maintainer="joblocal GmbH <produktentwicklung@joblocal.de>"
 
-ENV \
-    DEPS=""
-
 RUN addgroup -g 1000 -S www-data \
   && adduser -u 1000 -D -S -G www-data www-data
 
