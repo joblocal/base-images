@@ -1,11 +1,14 @@
-FROM joblocal/base-app:alpine-3.7
+FROM joblocal/base-app:alpine-3.8
 
 LABEL maintainer="joblocal GmbH <produktentwicklung@joblocal.de>"
 
 RUN apk add --update \
   curl \
   ghostscript \
+  git \
   imagemagick \
+  jq \
+  nodejs \
   php7-apcu \
   php7-fileinfo \
   php7-iconv \
@@ -15,14 +18,11 @@ RUN apk add --update \
   php7-simplexml \
   php7-tokenizer \
   php7-xsl \
-  jq \
-  python2 \
-  zip \
-  unzip \
   py-pip \
-  git \
+  python2 \
   rsync \
-  nodejs \
+  unzip \
+  zip \
   && rm -rf /var/cache/apk/*
 
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer \
