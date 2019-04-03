@@ -32,7 +32,7 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
   && ./awscli-bundle/install -b /usr/local/bin/aws \
   && rm -f awscli-bundle.zip
 
-RUN pip install --no-cache-dir docker-compose
+RUN pip install --no-cache-dir docker-compose~=1.23.0
 
 RUN yarn global add @joblocal/aws-cfn-deployment
 
