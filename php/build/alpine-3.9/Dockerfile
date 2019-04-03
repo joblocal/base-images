@@ -29,6 +29,17 @@ RUN curl "https://s3.amazonaws.com/aws-cli/awscli-bundle.zip" -o "awscli-bundle.
   && ./awscli-bundle/install -b /usr/local/bin/aws \
   && rm -f awscli-bundle.zip
 
+RUN apk add --no-cache --update --virtual pip-install-docker-compose \
+  gcc \
+  libc-dev \
+  libffi-dev \
+  make \
+  openssl-dev \
+  py-pip \
+  python-dev \
+  && pip install --no-cache-dir docker-compose \
+  && apk del pip-install-docker-compose
+
 RUN yarn global add @joblocal/aws-cfn-deployment
 
 WORKDIR /workspace
