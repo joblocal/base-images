@@ -22,6 +22,7 @@ RUN apk add --update \
   python2 \
   rsync \
   unzip \
+  yarn \
   zip \
   && rm -rf /var/cache/apk/*
 
@@ -32,6 +33,8 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
   && rm -f awscli-bundle.zip
 
 RUN pip install --no-cache-dir docker-compose
+
+RUN yarn global add @joblocal/aws-cfn-deployment
 
 WORKDIR /workspace
 
