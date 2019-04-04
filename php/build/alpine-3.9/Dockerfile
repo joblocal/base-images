@@ -17,6 +17,7 @@ RUN apk add --no-cache --update \
   php7-opcache \
   php7-phar \
   php7-tokenizer \
+  php7-xmlwriter \
   php7-xsl \
   python2 \
   rsync \
