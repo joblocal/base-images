@@ -2,10 +2,11 @@ FROM node:10.12.0-alpine
 
 LABEL maintainer="joblocal GmbH <produktentwicklung@joblocal.de>"
 
-RUN apk add --update python3 \
+RUN apk add --no-cache --update \
+  python3 \
   curl \
   bash \
-  && rm -rf /var/cache/apk/*
+  zip
 
 RUN curl -O https://bootstrap.pypa.io/get-pip.py \
     && python3 get-pip.py \
