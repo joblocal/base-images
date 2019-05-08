@@ -5,6 +5,7 @@ LABEL maintainer="joblocal GmbH <produktentwicklung@joblocal.de>"
 RUN apk add --no-cache --update \
   bash \
   curl \
+  git \
   jq \
   python3 \
   zip
