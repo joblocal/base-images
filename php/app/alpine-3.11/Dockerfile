@@ -2,6 +2,11 @@ FROM alpine:3.11
 
 LABEL maintainer="joblocal GmbH <produktentwicklung@joblocal.de>"
 
+ENV PHP_OPCACHE_VALIDATE_TIMESTAMPS="0" \
+    PHP_OPCACHE_MAX_ACCELERATED_FILES="30000" \
+    PHP_OPCACHE_MEMORY_CONSUMPTION="192" \
+    PHP_OPCACHE_MAX_WASTED_PERCENTAGE="10"
+
 RUN addgroup -g 1000 -S www-data \
   && adduser -u 1000 -D -S -G www-data www-data
 
