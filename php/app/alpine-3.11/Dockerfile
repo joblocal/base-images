@@ -23,6 +23,7 @@ RUN apk add --no-cache --update \
   php7-pdo_sqlite \
   php7-simplexml \
   php7-xml \
+  php7-opcache \
   runit \
   && ln -sf /dev/stdout /var/log/nginx/access.log \
   && ln -sf /dev/stderr /var/log/nginx/error.log
