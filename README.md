@@ -11,6 +11,7 @@ The images are used by our CI tools (prefixed 'build') and as base images for ou
 ## Images
 
 ### Build Images
+- [golang/build/1.14](https://hub.docker.com/r/joblocal/base-build-golang-awscli/)
 - [node/build/10.8.0](https://hub.docker.com/r/joblocal/base-build-node-awscli/)
 - [node/build/10.12.0](https://hub.docker.com/r/joblocal/base-build-node-awscli/)
 - [node/build/10.16](https://hub.docker.com/r/joblocal/base-build-node-awscli/)
