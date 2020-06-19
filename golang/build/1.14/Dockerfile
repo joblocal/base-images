@@ -10,7 +10,8 @@ RUN apk add --no-cache --update \
   python3 \
   zip \
   yarn \
-  make
+  make \
+  gcc
 
 RUN curl -O https://bootstrap.pypa.io/get-pip.py \
     && python3 get-pip.py \
