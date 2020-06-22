@@ -11,12 +11,17 @@ RUN apk add --no-cache --update \
   zip \
   yarn \
   make \
-  gcc
+  gcc \
+  python3-dev \
+  libffi-dev \
+  openssl-dev \
+  libc-dev
 
 RUN curl -O https://bootstrap.pypa.io/get-pip.py \
     && python3 get-pip.py \
     && pip install --upgrade pip \
-    && pip install awscli --upgrade
+    && pip install awscli --upgrade \
+    && pip install docker-compose --upgrade
 
 RUN yarn global add \
     @joblocal/aws-cfn-deployment \
