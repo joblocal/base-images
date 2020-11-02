@@ -36,9 +36,9 @@ RUN apk add --no-cache --update --virtual pip-install-docker-compose \
   libffi-dev \
   make \
   openssl-dev \
-  py-pip \
-  python-dev \
-  && pip install --no-cache-dir docker-compose \
+  py3-pip \
+  python3-dev \
+  && pip3 install --no-cache-dir docker-compose \
   && apk del pip-install-docker-compose
 
 RUN yarn global add @joblocal/aws-cfn-deployment
