@@ -29,6 +29,10 @@ RUN apk add --no-cache --update \
   php7-simplexml \
   php7-xml \
   php7-opcache \
+  php7-tokenizer \
+  php7-apcu \
+  php7-bcmath \
+  php7-fileinfo \
   runit \
   && ln -sf /dev/stdout /var/log/nginx/access.log \
   && ln -sf /dev/stderr /var/log/nginx/error.log
