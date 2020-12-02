@@ -20,6 +20,10 @@ RUN apk add --no-cache --update \
   php7-pdo_sqlite \
   php7-simplexml \
   php7-xml \
+  php7-tokenizer \
+  php7-apcu \
+  php7-bcmath \
+  php7-fileinfo \
   runit
 
 # Set Timezone to UTC

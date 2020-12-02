@@ -19,6 +19,10 @@ RUN apk add --no-cache --update \
   php7-tokenizer \
   php7-xmlwriter \
   php7-xsl \
+  php7-tokenizer \
+  php7-apcu \
+  php7-bcmath \
+  php7-fileinfo \
   python3 \
   rsync \
   unzip \
