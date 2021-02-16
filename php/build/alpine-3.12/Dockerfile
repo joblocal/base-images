@@ -28,6 +28,8 @@ RUN apk add --no-cache --update \
   unzip \
   yarn \
   zip \
+  rust \
+  cargo \
   && if [ ! -e /usr/bin/python ]; then ln -sf python3 /usr/bin/python ; fi
 
 RUN curl "https://s3.amazonaws.com/aws-cli/awscli-bundle.zip" -o "awscli-bundle.zip" \
