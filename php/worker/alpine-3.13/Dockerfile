@@ -24,7 +24,8 @@ RUN apk add --no-cache --update \
   php8-pecl-apcu \
   php8-bcmath \
   php8-fileinfo \
-  runit
+  runit \
+  && ln -s /usr/bin/php8 /usr/local/bin/php
 
 # Set Timezone to UTC
 RUN apk add --no-cache --update tzdata \
