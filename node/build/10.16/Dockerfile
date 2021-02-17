@@ -7,7 +7,8 @@ RUN apk add --no-cache --update \
   curl \
   jq \
   python3 \
-  zip
+  zip \
+  imagemagick
 
 RUN curl -O https://bootstrap.pypa.io/get-pip.py \
     && python3 get-pip.py \
