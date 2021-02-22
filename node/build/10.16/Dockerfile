@@ -14,9 +14,7 @@ RUN apk add --no-cache --update \
   automake \
   autoconf \
   libtool \
-  nasm \
-  libjpeg-turbo-dev \
-  jpeg-dev
+  nasm
 
 RUN curl -O https://bootstrap.pypa.io/get-pip.py \
     && python3 get-pip.py \
