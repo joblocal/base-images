@@ -7,14 +7,7 @@ RUN apk add --no-cache --update \
   curl \
   jq \
   python3 \
-  zip \
-  imagemagick \
-  make \
-  g++ \
-  automake \
-  autoconf \
-  libtool \
-  nasm
+  zip
 
 RUN curl -O https://bootstrap.pypa.io/get-pip.py \
     && python3 get-pip.py \
