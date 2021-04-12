@@ -36,7 +36,7 @@ RUN apk add --no-cache --update \
   runit \
   && ln -sf /dev/stdout /var/log/nginx/access.log \
   && ln -sf /dev/stderr /var/log/nginx/error.log \
-  && ln -s /usr/bin/php8 /usr/local/bin/php
+  && ln -s /usr/bin/php8 /usr/bin/php
 
 # Set Timezone to UTC
 RUN apk add --no-cache --update tzdata \
