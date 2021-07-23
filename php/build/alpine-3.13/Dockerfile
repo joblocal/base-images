@@ -30,7 +30,8 @@ RUN apk add --no-cache --update \
   zip \
   rust \
   cargo \
-  && if [ ! -e /usr/bin/python ]; then ln -sf python3 /usr/bin/python ; fi
+  && if [ ! -e /usr/bin/python ]; then ln -sf python3 /usr/bin/python ; fi \
+  && rm -f /usr/bin/php && ln -s /usr/bin/php8 /usr/bin/php
 
 RUN curl "https://s3.amazonaws.com/aws-cli/awscli-bundle.zip" -o "awscli-bundle.zip" \
   && unzip awscli-bundle.zip \
