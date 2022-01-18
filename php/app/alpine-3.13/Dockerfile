@@ -33,6 +33,7 @@ RUN apk add --no-cache --update \
   php8-pecl-apcu \
   php8-bcmath \
   php8-fileinfo \
+  php8-xmlwriter \
   runit \
   && ln -sf /dev/stdout /var/log/nginx/access.log \
   && ln -sf /dev/stderr /var/log/nginx/error.log \
