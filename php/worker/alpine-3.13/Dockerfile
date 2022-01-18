@@ -24,6 +24,7 @@ RUN apk add --no-cache --update \
   php8-pecl-apcu \
   php8-bcmath \
   php8-fileinfo \
+  php8-xmlwriter \
   runit \
   && ln -s /usr/bin/php8 /usr/bin/php
 
