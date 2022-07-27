@@ -14,5 +14,7 @@ RUN curl -O https://bootstrap.pypa.io/get-pip.py \
     && pip install --upgrade pip \
     && pip install awscli --upgrade
 
-RUN yarn global add @joblocal/aws-cfn-deployment \
+RUN yarn global add \
+    @joblocal/aws-cfn-deployment \
+    sass \
     && yarn cache clean
