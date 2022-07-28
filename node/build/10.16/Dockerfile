@@ -16,5 +16,4 @@ RUN curl -O https://bootstrap.pypa.io/get-pip.py \
 
 RUN yarn global add \
     @joblocal/aws-cfn-deployment \
-    sass \
     && yarn cache clean
