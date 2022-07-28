@@ -9,7 +9,7 @@ RUN apk add --no-cache --update \
   python3 \
   zip
 
-RUN curl -O https://bootstrap.pypa.io/get-pip.py \
+RUN curl -O https://bootstrap.pypa.io/pip/3.6/get-pip.py \
     && python3 get-pip.py \
     && pip install --upgrade pip \
     && pip install awscli --upgrade
