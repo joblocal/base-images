@@ -1,4 +1,4 @@
-FROM 18.9-alpine3.16
+FROM node:18.9-alpine3.16
 
 LABEL maintainer="joblocal GmbH <produktentwicklung@joblocal.de>"
 
