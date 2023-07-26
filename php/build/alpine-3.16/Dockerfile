@@ -4,6 +4,7 @@ LABEL maintainer="joblocal GmbH <produktentwicklung@joblocal.de>"
 
 RUN apk add --no-cache --update \
   curl \
+  curl-dev \
   ghostscript \
   git \
   imagemagick \
